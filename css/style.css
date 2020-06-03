@@ -188,6 +188,9 @@ input.input1 {
   border-radius: 25px;
   padding: 0 30px;
 }
+input[type="text"] {
+  text-transform: capitalize;
+}
 input.input1 + .shadow-input1 {
   border-radius: 25px;
 }

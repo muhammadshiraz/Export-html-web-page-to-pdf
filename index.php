@@ -68,7 +68,7 @@
 				</div>
 	
 				<div class="wrap-input1 validate-input" data-validate = "Valid email is required: name@mail.com">
-					<input class="input1" type="text" name="email" id="email" placeholder="Email">
+					<input class="input1" type="email" name="email" id="email" placeholder="Email">
 					<span class="shadow-input1"></span>
 				</div>
 
