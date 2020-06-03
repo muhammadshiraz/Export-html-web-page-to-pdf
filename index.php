@@ -10,6 +10,10 @@
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 	<!-- Animate CSS -->
 	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<!-- Hamburgers CSS -->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.css">
+	<!-- Select2 CSS -->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
 	<!-- Utils CSS -->
 	<link rel="stylesheet" type="text/css" href="css/utils.css">
 	<!-- Stylesheet -->
@@ -63,14 +67,14 @@
 					<span class="shadow-input1"></span>
 				</div>
 	
-				<div class="wrap-input1 validate-input" data-validate = "Valid email is required: example@domain.com">
+				<div class="wrap-input1 validate-input" data-validate = "Valid email is required: name@mail.com">
 					<input class="input1" type="text" name="email" id="email" placeholder="Email">
 					<span class="shadow-input1"></span>
 				</div>
 
 				<div class="wrap-input1 validate-input ml-3" data-validate = "Select the checkbox">
 					<label class="checkbox_container">
-						<input class="custom_checkbox" type="checkbox"> Subscribe to the newsletter. <a href="javascript:void(0);">View terms</a>
+						<input class="custom_checkbox" type="checkbox" name="checkbox"> Subscribe to the newsletter. <a href="javascript:void(0);">View terms</a>
 						<span class="checkmark"></span>
 					</label>
 					<span class="shadow-input1"></span>
@@ -94,7 +98,9 @@
 	<!-- Popper - Tooltip & Popover Positioning Engine -->
 	<script src="vendor/bootstrap/js/popper.js"></script>
 	<!-- Bootstrap to get the compiled CSS and JavaScript -->
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>	
+	<!-- Select2 is a jQuery based replacement for select boxes -->
+	<script src="vendor/select2/select2.min.js"></script>
 	<!-- Lightweight parallax hover tilt effect for jQuery -->
 	<script src="vendor/tilt/tilt.jquery.min.js"></script>
 	<script>
