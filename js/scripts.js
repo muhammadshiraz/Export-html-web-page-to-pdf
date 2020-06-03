@@ -30,30 +30,6 @@
             showValidate(email);
             check=false;
         }
-/*==================================================================
-    [ A library to generate PDFs in JavaScript ]*/
-        $('#submit_btn').click(function() {
-		
-            var imgData = imgPath;
-    
-            var doc = new jsPDF()
-    
-            doc.setFontSize(22)
-            doc.setTextColor(92, 76, 76)
-            doc.addImage(imgData, 'JPEG', 0, 0, 210, 297)
-    
-            var name = $('#name').val();
-            var phone = $('#phonenumber').val();
-            var date = $('#date').val();
-            var email = $('#email').val();
-        
-            doc.text(23, 81, name);
-            doc.text(23, 122, phone);
-            doc.text(23, 162, date);
-            doc.text(23, 202, email);
-            doc.save('form_output.pdf');
-    
-       });
 
         return check;
     });
@@ -74,6 +50,32 @@
         var thisAlert = $(input).parent();
         $(thisAlert).removeClass('alert-validate');
     }
+    
+    /*==================================================================
+    [ A library to generate PDFs in JavaScript ]*/
+
+    setTimeout(function(){ 
+        $('#submit_btn').on('click',function() {
+		
+            var imgData = imgPath;
+    
+            var doc = new jsPDF()
+    
+            doc.setFontSize(22)
+            doc.setTextColor(92, 76, 76)
+            doc.addImage(imgData, 'JPEG', 0, 0, 210, 297)
+    
+            var name = $('#name').val();
+            var phone = $('#phonenumber').val();
+            var date = $('#date').val();
+            var email = $('#email').val();
+        
+            doc.text(23, 81, name);
+            doc.text(23, 122, phone);
+            doc.text(23, 162, date);
+            doc.text(23, 202, email);
+            doc.save('form_output.pdf');
+       });}, 100);
 
 /*==================================================================
     [ Collapse Sidebar ]*/
